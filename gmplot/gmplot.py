@@ -8,7 +8,7 @@ from color_dicts import mpl_color_map, html_color_codes
 
 def safe_iter(var):
     try:
-        return iter(var)
+        return iter(var)im
     except TypeError:
         return [var]
 
@@ -280,7 +280,7 @@ class GoogleMapPlotter(object):
         f.write('\t\tvar img = new google.maps.MarkerImage(\'%s\');\n' %
                 (self.coloricon % color))
         f.write('\t\tvar marker = new google.maps.Marker({\n')
-        f.write('\t\ttitle: "no implimentation",\n')
+        f.write('\t\ttitle: "no implementation",\n')
         f.write('\t\ticon: img,\n')
         f.write('\t\tposition: latlng\n')
         f.write('\t\t});\n')
